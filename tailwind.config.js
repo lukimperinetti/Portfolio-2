@@ -12,7 +12,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'burtons': ['burtons', 'sans-serif']
+        comfortaa: 'Comfortaa',
+      },
+      colors: {
+        custom: "#2C4A55",
+        customcompl: "#bae6fd",
+        customcompl2: "#f1f5f9",
       },
     },
   },
