@@ -6,8 +6,8 @@ import {
   AiFillGithub,
   AiFillLinkedin,
 } from "react-icons/ai";
-import design from "../public/design.png";
-import code from "../public/code.png";
+import design from "../public/size.jpg";
+import code from "../public/crane.png";
 import consulting from "../public/consulting.png";
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
@@ -48,14 +48,21 @@ export default function Home() {
             <h2 className="text-5xl py-2 text-transparent bg-clip-text bg-gradient-to-r from-customcompl to-customcompl2 font-comfortaa md:text-6xl">
               Développeur FullStack
             </h2>
-            <p className="text-2cl py-2 leading-8 text-customcompl2 md:text-3xl">
+            {/* <p className="text-2cl py-2 leading-8 text-customcompl2 md:text-3xl">
               Texte a modifier plus tard
-            </p>
+            </p> */}
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-customcompl2">
             {/* <AiFillTwitterCircle className="cursor-pointer" /> */}
-            <a href="https://github.com/lukimperinetti" target="blank"><AiFillGithub className="cursor-pointer" /></a>
-            <a href="https://www.linkedin.com/in/luk-imperinetti-0a4385119/" target="blank"><AiFillLinkedin className="cursor-pointer" /></a>
+            <a href="https://github.com/lukimperinetti" target="blank">
+              <AiFillGithub className="cursor-pointer" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/luk-imperinetti-0a4385119/"
+              target="blank"
+            >
+              <AiFillLinkedin className="cursor-pointer" />
+            </a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-customcompl to-customcompl2 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-85 md:w-85">
             <Image
@@ -75,16 +82,36 @@ export default function Home() {
               A propos de moi
             </h3>
             <p className="text-2cl py-2 leading-8 text-customcompl2">
-              Texte a <spans className="text-teal-700">changer</spans> plus tard
-              aussi
-            </p>
-            <p className="text-customcompl2">
-              Texte a <spans className="text-teal-500">changer</spans> plus tard
-              aussi
-            </p>
-            <p className="text-customcompl2">
-              Texte a <spans className="text-teal-500">changer</spans> plus tard
-              aussi
+              Actuellement étudiant en{" "}
+              <spans className="text-teal-700">
+                <a
+                  href="https://www.epitech.eu/fr/formations/msc-pro-epitech-technology/"
+                  target="blank"
+                  className="cursor-pointer"
+                >
+                  {" "}
+                  Master à Epitech{" "}
+                </a>
+              </spans>{" "}
+              , je suis à la recherche d'une alternance de deux ans à partir du
+              2 janvier 2024. Passionné par le code, j'ai déjà acquis une solide
+              base de compétences techniques et je suis prêt à relever de
+              nouveaux défis. Mon objectif est de combiner mes connaissances en
+              développement avec une expérience professionnelle enrichissante !
+              Si vous recherchez un candidat déterminé à contribuer au succès de
+              votre entreprise tout en continuant son apprentissage, n'hésitez
+              pas à
+              <spans className="text-teal-700">
+                <a
+                  href="https://www.linkedin.com/in/luk-imperinetti-0a4385119/"
+                  target="blank"
+                  className="cursor-pointer"
+                >
+                  {" "}
+                  me contacter{" "}
+                </a>
+              </spans>{" "}
+              !
             </p>
           </div>
           {/* Afficher mon parcours d'apprentissage step by step : Autodidacte, Wac, MSC */}
@@ -105,7 +132,16 @@ export default function Home() {
               <p className="font-comfortaa text-sm">
                 J'ai travaillé en tant que développeur FullStack pour la <br />
                 société
-                <spans className="text-teal-700"> Enyom Distribution </spans>
+                <spans className="text-teal-700">
+                  <a
+                    href="https://www.size-factory.com/"
+                    target="blank"
+                    className="cursor-pointer"
+                  >
+                    {" "}
+                    Enyom Distribution{" "}
+                  </a>
+                </spans>
                 pendant 1 an a Paris.
                 <br /> J'ai pu travailler sur des projets différents, du
                 développement d'écrans <br />
@@ -127,14 +163,27 @@ export default function Home() {
 
             <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-gradient-to-r from-customcompl to-customcompl2">
               <Image src={code} width={100} height={100} className="mx-auto" />
-              <h4 className="text-xl font-comfortaa pt-8 pb-2">
-                Freelance
-              </h4>
+              <h4 className="text-xl font-comfortaa pt-8 pb-2">Freelance</h4>
               <p className="font-comfortaa text-sm">
-                J'ai travaillé en tant que <spans className="text-teal-700">développeur freelance </spans><br />
+                J'ai travaillé en tant que{" "}
+                <spans className="text-teal-700">
+                  <a
+                    href="https://www.malt.fr/profile/lukimperinetti"
+                    target="blank"
+                    className="cursor-pointer"
+                  >
+                    {" "}
+                    développeur freelance{" "}
+                  </a>
+                </spans>
+                <br />
                 dès la fin de mon alternance.
-                <br /> J'ai pu développer des compétences de gestion d'équipe, d'animation de <br/> réunions en plus de mes compétences techniques. <br />
-                J'ai travallé sur beaucoup de petits projets de maintenance et d'integration, mais aussi <br/> sur un projet plus conséquent de création from-scratch d'une market place.,
+                <br /> J'ai pu développer des compétences de gestion d'équipe,
+                d'animation de <br /> réunions en plus de mes compétences
+                techniques. <br />
+                J'ai travallé sur beaucoup de petits projets de maintenance et
+                d'integration, mais aussi <br /> sur un projet plus conséquent
+                de création from-scratch d'une market place.,
               </p>
               <h5 className="text-lg font-comfortaa pt-8 pb-2">
                 Technologies utilisées :{" "}
@@ -149,49 +198,55 @@ export default function Home() {
           </div>
           <div>
             <h3 className="text-3xl py-10 text-transparent bg-clip-text bg-gradient-to-r from-customcompl to-customcompl2 font-comfortaa">
-              Fortmations
+              Formations
             </h3>
             <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
               <ol className="relative border-l border-customcompl">
                 <li className="mb-10 ml-4">
                   <div className="absolute w-3 h-3 bg-customcompl2 rounded-full mt-1.5 -left-1.5 border border-customcompl2"></div>
                   <time className="mb-1 text-sm font-comfortaa leading-none text-customcompl2">
-                    February 2022
+                    2023 - 2026
                   </time>
                   <h3 class="text-lg text-transparent bg-clip-text bg-gradient-to-r from-customcompl to-customcompl2 font-comfortaa">
-                    Application UI code in Tailwind CSS
+                    Master of Sicence - Epitech Montpellier
                   </h3>
                   <p class="mb-4 text-base font-normal text-customcompl2">
-                    Get access to over 20+ pages including a dashboard layout,
-                    charts, kanban board, calendar, and pre-order E-commerce &
-                    Marketing pages.
+                    Titre d'expert des systèmes de l'information.
+                    <br />
+                    Approfondissement des compétences techniques, spécialisation
+                    en 3ème année.
                   </p>
                 </li>
                 <li className="mb-10 ml-4">
                   <div className="absolute w-3 h-3 bg-customcompl2 rounded-full mt-1.5 -left-1.5 border border-customcompl2"></div>
                   <time className="mb-1 text-sm font-normal leading-none text-customcompl2">
-                    March 2022
+                    2019-2021
                   </time>
                   <h3 className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-customcompl to-customcompl2 font-comfortaa">
-                    Marketing UI design in Figma
+                    WebAcadémie by Epitech - Paris
                   </h3>
                   <p className="text-base font-normal text-customcompl2 ">
-                    All of the pages and components are first designed in Figma
-                    and we keep a parity between the two versions even as we
-                    update the project.
+                    Titre de développeur/intégrateur web RNCP niveau 5.
+                    <br /> Cette formation se déroule sur 2 ans, dont une année
+                    en alternance.
+                    <br /> Apprentissage des différents langages du web et des
+                    bonnes pratiques de développement.
                   </p>
                 </li>
                 <li className="ml-4">
                   <div className="absolute w-3 h-3 bg-customcompl2 rounded-full mt-1.5 -left-1.5 border border-customcompl2"></div>
                   <time className="mb-1 text-sm font-normal leading-none text-customcompl2 ">
-                    April 2022
+                    Depuis toujours
                   </time>
                   <h3 className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-customcompl to-customcompl2 font-comfortaa">
-                    E-Commerce UI code in Tailwind CSS
+                    Autodidacte
                   </h3>
                   <p className="text-base font-normal text-customcompl2 ">
-                    Get started with dozens of web components and interactive
-                    elements built on top of Tailwind CSS.
+                    Depuis toujours je suis passionné par l'informatique et le
+                    code.
+                    <br /> J'ai appris à coder en autodidacte, en suivant des
+                    tutoriels et en réalisant des projets personnels grace,
+                    nottement, a Udémy, OpenClassroom et Youtube.
                   </p>
                 </li>
               </ol>

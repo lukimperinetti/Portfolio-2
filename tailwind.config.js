@@ -12,13 +12,18 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        comfortaa: 'Comfortaa',
+        comfortaa: "Comfortaa",
       },
       colors: {
         custom: "#2C4A55",
         customcompl: "#bae6fd",
         customcompl2: "#f1f5f9",
       },
+    },
+  },
+  variants: {
+    extend: {
+      display: ["group-hover"],
     },
   },
   plugins: [],
