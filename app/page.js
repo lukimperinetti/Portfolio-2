@@ -30,9 +30,7 @@ export default function Home() {
             <h1 className="text-xl font-medium">Luk IMPERINETTI</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill
-                  className="cursor-pointer text-2xl"
-                />
+                <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
               </li>
               <li>
                 <a
@@ -57,7 +55,7 @@ export default function Home() {
             <AiFillGithub className="cursor-pointer" />
             <AiFillLinkedin className="cursor-pointer" />
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-purple-900 to-blue-800 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+          <div className="relative mx-auto bg-gradient-to-b from-purple-900 to-blue-800 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-85 md:w-85">
             <Image
               src={avatarluk}
               alt="dev-ed"
@@ -88,7 +86,10 @@ export default function Home() {
             </p>
           </div>
           {/* Afficher mon parcours d'apprentissage step by step : Autodidacte, Wac, MSC */}
-          <div className="lg:flex gap-5">
+          <h3 className="text-3xl py-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-900 to-blue-800 font-medium">
+            Expériences Pro
+          </h3>
+          <div className="lg:flex gap-5 justify-center">
             <div className="text-center shadow-lg p-10 rounder-xl my-10">
               <Image
                 src={design}
@@ -117,40 +118,77 @@ export default function Home() {
               <p>ca</p>
               <p>et ca</p>
             </div>
-
-            <div className="text-center shadow-lg p-10 rounder-xl my-10">
-              <Image
-                src={consulting}
-                width={100}
-                height={100}
-                className="mx-auto"
-              />
-              <h4 className="text-lg font-medium pt-8 pb-2">MSc-pro</h4>
-              <p>
-                Texte qui decrit mon porjet. il était vraiment bien de fou !
-              </p>
-              <h5>Techno utilisé : </h5>
-              <p className="text-gray-800 py-1">ca</p>
-              <p>ca</p>
-              <p>et ca</p>
-            </div>
           </div>
           <div>
             <h3 className="text-3xl py-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-900 to-blue-800 font-medium">
-              Expérience Pro
+              Fortmations
             </h3>
-            <p className="text-2cl py-2 leading-8 text-gray-600">
-              Texte a <spans className="text-teal-500">changer</spans> plus tard
-              aussi
-            </p>
-            <p className="text-gray-600">
-              Texte a <spans className="text-teal-500">changer</spans> plus tard
-              aussi
-            </p>
-            <p className="text-gray-600">
-              Texte a <spans className="text-teal-500">changer</spans> plus tard
-              aussi
-            </p>
+            <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+              <ol className="relative border-l border-gray-200 dark:border-gray-700">
+                <li className="mb-10 ml-4">
+                  <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                  <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    February 2022
+                  </time>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                    Application UI code in Tailwind CSS
+                  </h3>
+                  <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                    Get access to over 20+ pages including a dashboard layout,
+                    charts, kanban board, calendar, and pre-order E-commerce &
+                    Marketing pages.
+                  </p>
+                  <a
+                    href="#"
+                    class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                  >
+                    Learn more{" "}
+                    <svg
+                      class="w-3 h-3 ml-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li className="mb-10 ml-4">
+                  <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                  <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    March 2022
+                  </time>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                    Marketing UI design in Figma
+                  </h3>
+                  <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                    All of the pages and components are first designed in Figma
+                    and we keep a parity between the two versions even as we
+                    update the project.
+                  </p>
+                </li>
+                <li className="ml-4">
+                  <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                  <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                    April 2022
+                  </time>
+                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+                    E-Commerce UI code in Tailwind CSS
+                  </h3>
+                  <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+                    Get started with dozens of web components and interactive
+                    elements built on top of Tailwind CSS.
+                  </p>
+                </li>
+              </ol>
+            </div>
           </div>
         </section>
         <section>
