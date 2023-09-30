@@ -5,6 +5,7 @@ import {
   AiFillTwitterCircle,
   AiFillGithub,
   AiFillLinkedin,
+  AiFillDownCircle,
 } from "react-icons/ai";
 import design from "../public/size.jpg";
 import code from "../public/crane.png";
@@ -15,6 +16,7 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+import CV_Luk_Imperinetti from "../public/pdfs/CV_Luk_Imperinetti.pdf";
 
 export default function Home() {
   return (
@@ -37,7 +39,9 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r bg-customcompl  text-teal-700 px-4 py-2 rounded-md ml-8"
-                  href="#"
+                  href={CV_Luk_Imperinetti}
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   Mon CV
                 </a>
@@ -266,58 +270,94 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
-              <Image
-                src={web1}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
+              <a
+                href="https://github.com/lukimperinetti/intro-AI-machineLearning"
+                target="blank"
+                className="cursor-pointer"
+              >
+                <Image
+                  src={web1}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                src={web2}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
+              <a
+                href="https://github.com/lukimperinetti/garden_app"
+                target="blank"
+                className="cursor-pointer"
+              >
+                <Image
+                  src={web2}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                src={web3}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
+              <a
+                href="https://github.com/lukimperinetti/LearningJupyterNotebook"
+                target="blank"
+                className="cursor-pointer"
+              >
+                <Image
+                  src={web3}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                src={web4}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
+              <a
+                href="https://github.com/lukimperinetti/My_irc"
+                target="blank"
+                className="cursor-pointer"
+              >
+                <Image
+                  src={web4}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                src={web5}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
+              <a
+                href="https://github.com/lukimperinetti/Portfolio-2"
+                target="blank"
+                className="cursor-pointer"
+              >
+                <Image
+                  src={web5}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </a>
             </div>
             <div className="basis-1/3 flex-1">
-              <Image
-                src={web6}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-              />
+              <a
+                href="https://github.com/lukimperinetti/chill_coding"
+                target="blank"
+                className="cursor-pointer"
+              >
+                <Image
+                  src={web6}
+                  className="rounded-lg object-cover"
+                  width={"100%"}
+                  height={"100%"}
+                  layout="responsive"
+                />
+              </a>
             </div>
           </div>
         </section>
