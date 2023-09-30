@@ -1,4 +1,4 @@
 This app is my portfolio.
-React/Next.js & materialize
+React/Next.js & tailwindcss
 
 run : npm run dev
